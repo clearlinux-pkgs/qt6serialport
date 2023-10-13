@@ -4,10 +4,10 @@
 # Using build pattern: cmake
 #
 Name     : qt6serialport
-Version  : 6.5.3
-Release  : 1
-URL      : https://download.qt.io/official_releases/qt/6.5/6.5.3/submodules/qtserialport-everywhere-src-6.5.3.tar.xz
-Source0  : https://download.qt.io/official_releases/qt/6.5/6.5.3/submodules/qtserialport-everywhere-src-6.5.3.tar.xz
+Version  : 6.6.0
+Release  : 2
+URL      : https://download.qt.io/official_releases/qt/6.6/6.6.0/submodules/qtserialport-everywhere-src-6.6.0.tar.xz
+Source0  : https://download.qt.io/official_releases/qt/6.6/6.6.0/submodules/qtserialport-everywhere-src-6.6.0.tar.xz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause GFDL-1.3 GPL-2.0 GPL-3.0 LGPL-3.0
@@ -53,15 +53,15 @@ license components for the qt6serialport package.
 
 
 %prep
-%setup -q -n qtserialport-everywhere-src-6.5.3
-cd %{_builddir}/qtserialport-everywhere-src-6.5.3
+%setup -q -n qtserialport-everywhere-src-6.6.0
+cd %{_builddir}/qtserialport-everywhere-src-6.6.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1696284679
+export SOURCE_DATE_EPOCH=1697155390
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -97,7 +97,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1696284679
+export SOURCE_DATE_EPOCH=1697155390
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/qt6serialport
 cp %{_builddir}/qtserialport-everywhere-src-%{version}/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/qt6serialport/b073f11f0c81a95ab5e32aa6b5d23a5955a95274 || :
@@ -118,9 +118,9 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
-/usr/include/QtSerialPort/6.5.3/QtSerialPort/private/qserialport_p.h
-/usr/include/QtSerialPort/6.5.3/QtSerialPort/private/qserialportinfo_p.h
-/usr/include/QtSerialPort/6.5.3/QtSerialPort/private/qtserialport-config_p.h
+/usr/include/QtSerialPort/6.6.0/QtSerialPort/private/qserialport_p.h
+/usr/include/QtSerialPort/6.6.0/QtSerialPort/private/qserialportinfo_p.h
+/usr/include/QtSerialPort/6.6.0/QtSerialPort/private/qtserialport-config_p.h
 /usr/include/QtSerialPort/QSerialPort
 /usr/include/QtSerialPort/QSerialPortInfo
 /usr/include/QtSerialPort/QtSerialPort
@@ -148,7 +148,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libQt6SerialPort.so.6
-/usr/lib64/libQt6SerialPort.so.6.5.3
+/usr/lib64/libQt6SerialPort.so.6.6.0
 
 %files license
 %defattr(0644,root,root,0755)
