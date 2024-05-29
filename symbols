@@ -1,3 +1,4 @@
+libQt6SerialPort.so.6:NonQt
 libQt6SerialPort.so.6:Qt_6
 libQt6SerialPort.so.6:Qt_6_PRIVATE_API
 libQt6SerialPort.so.6:_ZN11QSerialPort10clearErrorEv
@@ -19,6 +20,7 @@ libQt6SerialPort.so.6:_ZN11QSerialPort15isRequestToSendEv
 libQt6SerialPort.so.6:_ZN11QSerialPort15setBreakEnabledEb
 libQt6SerialPort.so.6:_ZN11QSerialPort15stopBitsChangedENS_8StopBitsE
 libQt6SerialPort.so.6:_ZN11QSerialPort16bindableDataBitsEv
+libQt6SerialPort.so.6:_ZN11QSerialPort16bindableStopBitsEN2Qt15Disambiguated_tE
 libQt6SerialPort.so.6:_ZN11QSerialPort16bindableStopBitsEv
 libQt6SerialPort.so.6:_ZN11QSerialPort16setRequestToSendEb
 libQt6SerialPort.so.6:_ZN11QSerialPort16waitForReadyReadEi
