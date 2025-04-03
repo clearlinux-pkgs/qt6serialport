@@ -27,7 +27,9 @@ libQt6SerialPort.so.6:QSerialPort::setDataTerminalReady(bool)@@Qt_6
 libQt6SerialPort.so.6:QSerialPort::setFlowControl(QSerialPort::FlowControl)@@Qt_6
 libQt6SerialPort.so.6:QSerialPort::setParity(QSerialPort::Parity)@@Qt_6
 libQt6SerialPort.so.6:QSerialPort::setRequestToSend(bool)@@Qt_6
+libQt6SerialPort.so.6:QSerialPort::setSettingsRestoredOnClose(bool)@@Qt_6
 libQt6SerialPort.so.6:QSerialPort::setStopBits(QSerialPort::StopBits)@@Qt_6
+libQt6SerialPort.so.6:QSerialPort::settingsRestoredOnCloseChanged(bool)@@Qt_6
 libQt6SerialPort.so.6:QSerialPort::stopBitsChanged(QSerialPort::StopBits)@@Qt_6
 libQt6SerialPort.so.6:QSerialPort::waitForBytesWritten(int)@@Qt_6
 libQt6SerialPort.so.6:QSerialPort::waitForReadyRead(int)@@Qt_6
